@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 
-import data from './gamesData.json';
+import data from "./gamesData.json";
 
-interface Lobby{
-  brand:string;}
-
+interface Lobby {
+  brand: string;
+}
 
 export const Lobby = (props: Lobby) => {
   const isCosmoswin = props.brand === "Cosmoswin";
@@ -24,9 +24,11 @@ export const Lobby = (props: Lobby) => {
             src={item.image}
             alt={item.string}
           />
-          <p className="mt-2 font-medium text-center text-white">{item.string}</p>
+          <p className="mt-2 font-medium text-center text-white">
+            {item.string}
+          </p>
         </div>
       ))}
     </div>
   );
-}
+};

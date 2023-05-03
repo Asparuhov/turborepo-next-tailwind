@@ -1,12 +1,17 @@
-import React from 'react'
-import { RegistrationForm } from 'ui'
+import React from "react";
+import { RegistrationForm } from "ui";
 import { useRouter } from "next/router";
 
-type Props = {}
+type Props = {};
 
 export default function Registration({}: Props) {
-  const router = useRouter()
+  const router = useRouter();
   return (
-    <RegistrationForm popup={false} router={router} mainColor='bg-yellow-400' secondaryColor='bg-gray-800'/>
-  )
+    <RegistrationForm
+      popup={false}
+      router={router}
+      mainColor="bg-yellow-400"
+      secondaryColor="bg-gray-800"
+    />
+  );
 }
