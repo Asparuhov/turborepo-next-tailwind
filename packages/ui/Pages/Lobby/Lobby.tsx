@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 
 import data from './gamesData.json';
 
@@ -8,8 +9,8 @@ interface Lobby{
 export const Lobby = (props: Lobby) => {
   const isCosmoswin = props.brand === "Cosmoswin";
   const thumbnailClass = isCosmoswin
-    ? ""
-    : "rounded-lg transition duration-300 transform hover:scale-110";
+    ? "rounded-lg transition duration-300 transform hover:scale-110"
+    : "";
 
   return (
     <div className="flex flex-wrap justify-center">
@@ -23,7 +24,7 @@ export const Lobby = (props: Lobby) => {
             src={item.image}
             alt={item.string}
           />
-          <p className="mt-2 font-medium text-center">{item.string}</p>
+          <p className="mt-2 font-medium text-center text-white">{item.string}</p>
         </div>
       ))}
     </div>

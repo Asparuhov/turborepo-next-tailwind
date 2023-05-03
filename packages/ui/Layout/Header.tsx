@@ -1,6 +1,4 @@
-import {useState} from 'react'
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 interface HeaderProps{
   operatorName: string;
   mainColorNav: string;
@@ -94,7 +92,7 @@ export const Header = (props: HeaderProps) => {
         <div className="flex flex-col items-center justify-center h-full">
           <Link
             href="/lobby"
-            className={`${props.colorLetters} hover:bg-gray-700 py-4 text-xl font-medium text-center border-b border-gray-700`}
+            className={`${props.colorLetters} hover:bg-gray-700 py-4 text-xl font-medium text-center border-b border-gray-700 text-white`}
             onClick={toggleMenu}
           >
             Lobby
@@ -102,7 +100,7 @@ export const Header = (props: HeaderProps) => {
 
           <Link
             href="/registration"
-            className={`${props.colorLetters} hover:bg-gray-700 py-4 text-xl font-medium text-center`}
+            className={`${props.colorLetters} hover:bg-gray-700 py-4 text-xl font-medium text-center text-white`}
             onClick={toggleMenu}
             >
             Registration

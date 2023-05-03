@@ -1,5 +1,4 @@
-import  React  from 'react';
-import { ReactNode, useState } from 'react';
+import  React, { ReactNode, useState }  from 'react';
 import { Header } from "ui";
 
 type Props = {
@@ -16,8 +15,8 @@ export default function Layout({ children }: Props) {
   return (
     
     <>
-      <Header operatorName='Cosmoswin' mainColorNav='bg-teal-300' colorLetters='text-white'document={_document}  menuOpener={{value: menuOpen, func: setMenuOpen}}/>
-      <main>{children}</main>
+      <Header operatorName='Cosmoswin' mainColorNav='bg-teal-300' colorLetters='text-303030'document={_document}  menuOpener={{value: menuOpen, func: setMenuOpen}}/>
+      <main style={{backgroundColor:"#27273F"}}>{children}</main>
     </>
   );
 }
