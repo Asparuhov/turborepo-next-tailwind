@@ -7,9 +7,12 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
+    "postcss": "^8.4.23",
     "prettier": "^2.5.1",
+    "tailwindcss": "^3.3.2",
     "turbo": "latest"
   },
   "name": "my-turborepo",
@@ -17,5 +20,11 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.1",
+    "next-remove-imports": "^1.0.11",
+    "react-router-dom": "^6.11.0"
+  }
 }
