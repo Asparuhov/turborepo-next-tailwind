@@ -1,9 +1,9 @@
 import React from 'react'
-
+import { Lobby } from 'ui'
 type Props = {}
 
 export default function lobby({}: Props) {
   return (
-    <div>lobby</div>
+    <Lobby brand="betfinal"/>
   )
 }
