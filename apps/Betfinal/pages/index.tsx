@@ -1,10 +1,5 @@
-import { Button } from "ui";
+import HomePage from "./HomePage/HomePage";
 
-export default function App() {
-  return (
-    <div>
-      <h1>Betfinal</h1>
-      <Button />
-    </div>
-  );
+export default function home() {
+  return (<HomePage/>);
 }
