@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import data from "./gamesData.json";
 
 interface Lobby {
@@ -14,7 +15,7 @@ export const Lobby = (props: Lobby) => {
 
   return (
     <>
-      <div className="grid grid-cols-3 px-2 sm:px-4 md:px-5 aspect-square md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 justify-center">
+      <div className="grid grid-cols-3 pt-20 sm:px-4 md:px-5 aspect-square md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 justify-center">
         {visibleData.map((item) => (
           <div
             key={item.id}
