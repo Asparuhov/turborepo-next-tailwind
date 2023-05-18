@@ -21,7 +21,7 @@ export default function Layout({ children }: Props) {
         document={_document}
         menuOpener={{ value: menuOpen, func: setMenuOpen }}
       />
-      <main style={{ backgroundColor: "#27273F" }}>{children}</main>
+      <main style={{ backgroundColor: "#27273F", paddingBottom:"15px"}}>{children}</main>
     </>
   );
 }

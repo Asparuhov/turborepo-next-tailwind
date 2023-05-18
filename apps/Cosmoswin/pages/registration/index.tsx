@@ -32,7 +32,7 @@ export default function Registration({}: Props) {
           />
         </div>
       </div>
-      <Lobby brand="Cosmoswin" />
+      <Lobby loadingImages={32} imageClass="aspect-square w-50 h-50 shrink object-cover rounded-lg transition duration-300 transform hover:scale-110" />
     </>
   );
 }
